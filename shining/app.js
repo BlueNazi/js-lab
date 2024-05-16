@@ -21,5 +21,4 @@ function arrow (event){
 
 }
 
-
 window.addEventListener("keyup",arrow)
