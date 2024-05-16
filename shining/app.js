@@ -4,7 +4,6 @@ let down=document.querySelector(".down");
 let right=document.querySelector(".right");
 let left=document.querySelector(".left");
 
-
 function arrow (event){
     if(event.keyCode===38){
         up.classList.add("shine")
