@@ -32,7 +32,7 @@ function convert() {
         result = amount * 1000000;
     }
 
-    document.getElementById("result").innerText = `Result: ${result}`;
+    document.getElementById("result").innerText =  "Result is:" + result;
 }
 
 console.log(convert);
