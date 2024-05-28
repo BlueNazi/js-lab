@@ -156,11 +156,10 @@ function createBook(book) {
         </div>
     `;
 }
-
-
 function disBook(books) {
     document.getElementById("book-list").innerHTML = books.map(createBook).join("");
 }
+
 
 window.addEventListener("load", () => {
     disBook(BOOKS);
