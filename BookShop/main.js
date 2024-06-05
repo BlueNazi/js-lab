@@ -145,20 +145,70 @@ const BOOKS = [
     }
 ];
 
+const BASKET = [];
 
+const basket = document.getElementById("basket");
+const root = document.getElementById("root");
 
-function createBook(book) {
+function render(book) {
     return `
         <div class="book-card">
             <img src="./image/${book.imgSrc}" alt="${book.title}".jpeg>
             <h2>${book.title}</h2>
             <p> ${book.author} - ${book.published_date}</p>
+            ${
+                !BASKET.find(basketItem => basketItem.id === book.id) 
+                ?
+                `<button onclick="handleAddToBasket('${book.id}')">MY LIBRARY</button>`
+                :
+                `<h4>ADDED TO BASKET</h4>`
+            }
         </div>
     `;
+            
 }
+
+
+
 function disBook(books) {
-    document.getElementById("book-list").innerHTML = books.map(createBook).join("");
+    document.getElementById("root").innerHTML = books.map(render).join("");
 }
+
+
+function renderBasket() {
+    let template = `<section class="baskets">`
+    template += BASKET.map(book => {
+        return `
+            <div class="product basket">
+                <img src="${book.image}" />
+                <h3>${book.title}</h3>
+                <button onclick="" class='delete'>REMOVE FROM BASKET </button>
+            </div>`
+    }).join("");
+
+    template += '</section>';
+    root.innerHTML = template;
+    basket.textContent = BASKET.length
+}
+
+
+function handleSearch(event) {
+    const value = event.target.value.toLowerCase();
+    const searchResult = BOOKS.filter(book =>
+        book.title.toLowerCase().includes(value) ||
+        book.author.toLowerCase().includes(value)
+    );
+    disBook(searchResult);
+}
+
+
+function handleAddToBasket(bookId) {
+    debugger;
+    const finded = BOOKS.find(book => book.id === +bookId);
+    BASKET.push(finded);
+    disBook(BOOKS)
+}
+
 
 
 window.addEventListener("load", () => {

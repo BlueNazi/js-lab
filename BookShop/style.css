@@ -1,8 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #98c4ff;
     color: #333;
     direction: rtl;
+    font-family: helvetica;
+    margin: 0;
     text-align: right;
 }
 
@@ -11,9 +17,11 @@ header {
     color: white;
     font-family: cursive;
     border-radius: 5px;
-    width: 35%;
-    margin: 0 auto;
-    text-align: center;
+    padding: 8px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
 }
 
 
@@ -38,7 +46,7 @@ button.opt:hover {
     background-color: #555;
 }
 
-#book-list {
+#root{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -49,12 +57,14 @@ button.opt:hover {
     padding: 5px;
     margin-bottom: 20px;
     text-align: center;
+    justify-content: center;
 }
 .book-card {
-    background-color: rgb(54, 158, 255);
+    background-color: rgba(255, 236, 173, 0.747);
     border-radius: 8px;
     margin: 10px;
     width: 200px;
+    height: 316px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     cursor: pointer;
@@ -77,4 +87,33 @@ button.opt:hover {
     font-size: 20px;
     color: #2c2c2c;
     cursor: pointer;
+}
+
+a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+  }
+  button {
+    
+    background-color: rgb(71, 71, 71);
+    color: white;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    width: 110px;
+    border-radius: 5px;
+}
+
+.basket {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center ;
+}
+
+.basket > img {
+    height: 100px;
+    width: auto;
 }

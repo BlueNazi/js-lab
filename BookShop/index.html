@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +12,11 @@
 
 <body>
     <header>
+
+
+        <a href="#" onclick="renderBasket()"><span id="basket">0</span>&nbsp;<i class="fa fa-book" aria-hidden="true"></i></a>
+        <input type="text" id="search-input" onkeyup="handleSearch(event)">
         <h1>Library</h1>
-        <i class="fa fa-search" aria-hidden="true" id="search-icon"></i>
-        <input type="text" id="search-input">
-        
     </header>
     <div id="genre-buttons">
 
@@ -24,10 +26,11 @@
         <button id="درام" class="opt">درام</button>
         <button id="فلسفه" class="opt">فلسفه</button>
         <button id="تاریخ" class="opt">تاریخ</button>
-        
-    </div>
-    <main id="book-list">
 
+    </div>
+    <main >
+        <div id="root"></div>
     </main>
 </body>
+
 </html>
