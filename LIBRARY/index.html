@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <script src="data.js"></script>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+  </head>
+  <body>
+    <header>
+      <div>
+        <h3 onclick="renderBasket()"> <i class="fa fa-book" aria-hidden="true"></i> <span id="basket">0</span></h3>
+
+       
+      </div>
+      
+      <input type="text" id="search-input" onkeyup="handleSearch(event)">
+      <h1>Library</h1>
+      
+    </header>
+    <div id="genre-buttons">
+
+      <button id="همه" class="opt">همه</button>
+      <button id="شعر" class="opt">شعر</button>
+      <button id="عاشقانه" class="opt">عاشقانه</button>
+      <button id="درام" class="opt">درام</button>
+      <button id="فلسفه" class="opt">فلسفه</button>
+      <button id="تاریخ" class="opt">تاریخ</button>
+
+  </div>
+    <div id="root"></div>
+  </body>
+</html>
