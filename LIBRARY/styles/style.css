@@ -1,0 +1,392 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #87bbff;
+    color: #333;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #202c38;
+    color: white;
+    font-family: cursive;
+    border-radius: 5px;
+    padding: 10px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    color: #87bbff;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: #0077ff;
+    font-size: 16px;
+    padding: 7px;
+}
+
+#genre-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+button.opt {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+button.opt:hover {
+    background-color: #555;
+}
+
+#root {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#search-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.products,
+.baskets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.product {
+    background-color: rgba(178, 233, 255, 0.747);
+    border-radius: 8px;
+    margin: 10px;
+    width: 200px;
+    height: 316px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+   }
+.product img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.product h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product p {
+    margin: 2px 10px;
+    font-size: 18px;
+    color: #2c2c2c;
+
+}
+
+.basket {
+    background-color: rgba(178, 233, 255, 0.747);
+    border-radius: 8px;
+    margin: 10px;
+    width: 200px;
+    height: 316px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.basket img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.basket h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.basket p {
+    margin: 5px 10px;
+    font-size: 16px;
+    color: #2c2c2c;
+}
+
+button {
+    background-color: rgb(71, 71, 71);
+    color: white;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    width: 110px;
+    border-radius: 5px;
+}
+
+.basketDiv {
+    cursor: pointer;
+    background-color: rgb(119, 172, 197);
+    border-radius: 5px;
+    width: 80px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.basketDiv h3 {
+    margin: auto;
+    padding: 6px 16px;
+}
+
+nav {
+    margin: 10px 0;
+}
+
+.basketDiv:hover {
+
+    background-color: rgb(77, 110, 126);
+}
+
+.add,
+.added,
+.remove,
+.price {
+    position: absolute;
+    bottom: 10px;
+}
+
+.add {
+    left: 10px;
+    color: black;
+    font-size: 30px;
+    margin: 0px 4px 16px;
+}
+
+.add:hover {
+    animation: shake 0.5s;
+}
+
+.added {
+    left: 10px;
+    color: black;
+    font-size: 30px;
+}
+
+.remove {
+    left: 4px;
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+}
+
+.remove:hover {
+    animation: shake 0.5s;
+}
+
+.price {
+    right: 8px;
+    bottom: 30px;
+}
+
+
+.register-button {
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    padding: 7px;
+}
+
+.container {
+    width: 500px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+  }
+  
+  .pages {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .pages > div {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 11px 15px;
+    font-size: 24px;
+  }
+  
+  .pages span {
+    content: "";
+    color: #0077ff;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    align-self: center;
+    transition: 0.5s ease;
+  }
+  
+  
+  .btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .btns button {
+    border: none;
+    padding: 10px 20px;
+    background-color:#2c2c2c;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .prevBtn {
+    background-color: rgb(175, 175, 175);
+  }
+  
+
+
+  .active {
+    background-color:rgb(0, 110, 255) !important;
+    color: white !important;
+  }
+
+
+  .active + span {
+    background-color:rgb(0, 110, 255) !important;
+    color: white !important;
+  }
+  
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .header-left {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search {
+        margin: 10px 0;
+    }
+
+    h1 {
+        margin: 10px 0;
+    }
+
+    #search-input {
+        width: 100%;
+    }
+
+    .basketDiv {
+        width: auto;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        margin: 10px 0;
+    }
+
+    .register-button {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    #genre-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button.opt {
+        margin: 5px 0;
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    #genre-buttons {
+        flex-direction: column;
+    }
+
+    button.opt {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+

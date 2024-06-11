@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Library</title>
+  <script src="../script/data.js"></script>
+  <script src="../script/app.js" defer></script>
+  <link rel="stylesheet" href="../styles/style.css" />
+
+  <link rel="icon" href="../image/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- SweetAlert CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+  <!-- SweetAlert JS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
+</head>
+
+<body>
+  <header>
+
+    <div class="basketDiv">
+      <h3 onclick="renderBasket()"> <i class="fa fa-book" aria-hidden="true"></i> <span id="basket">0</span></h3>
+
+
+    </div>
+    <nav>
+      <a href="login.html" class="register-button">ثبت نام/ورود</a>
+    </nav>
+    <div class="search">
+      <input type="text" id="search-input" onkeyup="handleSearch(event)" placeholder="نام کتاب، نام نویسنده ..."> <i
+        class="fa fa-search" aria-hidden="true"></i>
+    </div>
+    <h1>Library</h1>
+
+  </header>
+  <div id="genre-buttons">
+
+    <button id="همه" class="opt">همه</button>
+    <button id="شعر" class="opt">شعر</button>
+    <button id="عاشقانه" class="opt">عاشقانه</button>
+    <button id="درام" class="opt">درام</button>
+    <button id="فلسفه" class="opt">فلسفه</button>
+    <button id="تاریخ" class="opt">تاریخ</button>
+
+  </div>
+  <div class="container">
+    <div class="pages">
+      <div><span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span></div>
+      <span></span>
+      <div><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+      <span></span>
+      <div><i class="fa fa-address-card-o" aria-hidden="true"></i></div>
+      <span></span>
+      <div><i class="fa fa-check-circle-o" aria-hidden="true"></i></div>
+    </div>
+    <div class="btns">
+      <button onclick="handleNext()">ادامه ثبت سفارش</button>
+    </div>
+  </div>
+  <div id="root"></div>
+</body>
+
+</html>

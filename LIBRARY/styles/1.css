@@ -1,0 +1,29 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('11.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    direction: rtl;
+
+
+}
+
+p {
+
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    background-color: azure;
+    color: dimgray;
+    border-radius: 5px;
+}
