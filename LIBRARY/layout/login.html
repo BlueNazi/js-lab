@@ -36,16 +36,16 @@
     <div id="login-box">
         <div class="left">
             <h1>Sign up</h1>
-            <form id="signup-form" onsubmit="return validateForm()">
-                <input type="text" id="username" name="username" placeholder="Username" oninput="validateUsername()"/>
+            <form id="signup-form">
+                <input type="text" id="username" name="username" placeholder="Username" oninput="validateForm()"/>
                 <p id="username-error"></p>
-                <input type="text" id="email" name="email" placeholder="E-mail" oninput="validateEmail()"/>
+                <input type="text" id="email" name="email" placeholder="E-mail" oninput="validateForm()"/>
                 <p id="email-error"></p>
-                <input type="password" id="password" name="password" placeholder="Password" oninput="validatePassword()"/>
+                <input type="password" id="password" name="password" placeholder="Password" oninput="validateForm()"/>
                 <p id="password-error"></p>
-                <input type="password" id="password2" name="password2" placeholder="Retype password" oninput="validatePasswordMatch()"/>
+                <input type="password" id="password2" name="password2" placeholder="Retype password" oninput="validateForm()"/>
                 <p id="password2-error"></p>
-                <input type="submit" name="signup_submit" value="Sign me up" />
+                <input type="submit" id="signup-submit" name="signup_submit" value="Sign me up" disabled />
             </form>
         </div>
         <div class="right">
