@@ -97,38 +97,6 @@ function handleNext() {
     setActiveStep(CURRENT_STEP)
 }
 
-function validateForm() {
-    const username = document.getElementById('username').value;
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    const password2 = document.getElementById('password2').value;
-
-    const usernameRegex = /^[a-zA-Z0-9]{3,15}$/;
-    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-    const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
-
-    if (!usernameRegex.test(username)) {
-        alert('Username must be 3-15 characters long and contain only letters and numbers.');
-        return false;
-    }
-
-    if (!emailRegex.test(email)) {
-        alert('Please enter a valid email address.');
-        return false;
-    }
-
-    if (!passwordRegex.test(password)) {
-        alert('Password must be at least 8 characters long and contain at least one letter and one number.');
-        return false;
-    }
-
-    if (password !== password2) {
-        alert('Passwords do not match.');
-        return false;
-    }
-
-    return true;
-}
 
 
 // events
