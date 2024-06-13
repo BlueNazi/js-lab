@@ -1,7 +1,7 @@
 // dom nodes
 const root = document.getElementById("root");
 const basket = document.getElementById("basket");
-const divs = document.querySelectorAll(".pages > div");
+
 
 // function
 function render(list) {
