@@ -18,7 +18,8 @@ body{
     width:100%;
     margin:1% 0%;
     padding:0.6% 0%;
-    color:rgb(70, 132, 143);
+    color:rgb(119, 172, 197);
+    direction: ltr;
     font-size:0.8em;
     }
     

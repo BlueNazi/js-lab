@@ -29,6 +29,7 @@
     border: none;
     color: #87bbff;
     font-size: 30px;
+    font-weight: bold;
 }
 body {
     font-family: Arial, sans-serif;
@@ -70,7 +71,7 @@ a {
     border-radius: 10px;
     color: #0077ff;
     font-size: 16px;
-    padding: 7px;
+    
 }
 
 #genre-buttons {
@@ -127,7 +128,7 @@ button.opt:hover {
 }
 
 .product {
-    background-color: rgba(91, 208, 255, 0.747);
+    background-color:rgb(119, 172, 197);
     border-radius: 8px;
     margin: 10px;
     width: 200px;
@@ -138,7 +139,7 @@ button.opt:hover {
     position: relative;
    }
 .product:hover{
-    background-color: rgba(54, 194, 250, 0.747);
+    background-color:  rgb(77, 110, 126);
     box-shadow: 0 7px 7px rgba(0, 0, 0, 0.1);
    }
    
@@ -161,7 +162,7 @@ button.opt:hover {
 }
 
 .basket {
-    background-color:rgba(91, 208, 255, 0.747);
+    background-color:rgb(119, 172, 197);
     border-radius: 8px;
     margin: 10px;
     width: 200px;
@@ -173,7 +174,10 @@ button.opt:hover {
     flex-direction: column;
     align-items: center;
 }
-
+.basket:hover{
+    background-color:  rgb(77, 110, 126);
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.1);
+   }
 .basket img {
     width: 100%;
     height: 200px;
@@ -298,7 +302,12 @@ nav {
     padding: 11px 15px;
     font-size: 24px;
   }
-  
+  .pages > div:hover{
+    background-color: #87bbff;
+    cursor: pointer;
+
+  }
+
   .pages span {
     content: "";
     color: #0077ff;
