@@ -136,6 +136,7 @@ button.opt:hover {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     cursor: pointer;
+    transition:0.5s;
     position: relative;
    }
 .product:hover{
@@ -173,6 +174,7 @@ button.opt:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition:0.5s;
 }
 .basket:hover{
     background-color:  rgb(77, 110, 126);
@@ -214,6 +216,7 @@ button {
     height: 38px;
     display: flex;
     justify-content: center;
+    transition:0.5s;
     align-items: center;
 }
 
@@ -301,9 +304,10 @@ nav {
     border-radius: 50%;
     padding: 11px 15px;
     font-size: 24px;
+    transition:0.5s;
   }
   .pages > div:hover{
-    background-color: #87bbff;
+    background-color: rgb(119, 172, 197);
     cursor: pointer;
 
   }
