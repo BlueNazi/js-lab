@@ -58,6 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
         request.send();
     }
     
+    
     function render() {
         const totalPosts = posts.length;
         const start = (currentPage - 1) * itemsPerPage;
