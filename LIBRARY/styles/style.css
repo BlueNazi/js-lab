@@ -355,6 +355,11 @@ nav {
     color: white !important;
   }
   
+  .loc{
+    list-style-type: none;
+    color:#252525;
+    padding: 6px;
+}
 
 /* Media Queries */
 @media (max-width: 768px) {
