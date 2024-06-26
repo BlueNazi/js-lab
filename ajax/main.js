@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     window.changePage = function(page) {
-        const totalPages = Math.ceil(posts.length / itemsPerPage);
+        const totalPages = Math.floor(posts.length / itemsPerPage);
         if (page < 1 || page > totalPages) return;
         currentPage = page;
         render();
