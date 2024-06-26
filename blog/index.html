@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ajax</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Blog</h1>
+      <h2>Posts</h2>
+      <h3>Theme: 
+        <button onclick="handleTheme('light')">Light</button>
+        <button onclick="handleTheme('dark')">Dark</button></h3>
+    </header>
+    <div class="container">
+      <div id="postList">
+        <div class="card is-loading">
+          <div class="image"></div>
+          <div class="content">
+            <h2></h2>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="pagination"></div>
+  </body>
+</html>
